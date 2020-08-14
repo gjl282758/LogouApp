@@ -1,0 +1,125 @@
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+/* 头部 */
+.header{
+    display: flex;
+    border-bottom: 1px solid #f7f7f7;
+    line-height: 42px;
+}
+.header span{
+    margin:0 10px;
+}
+.header div{
+    position: relative;
+    flex: 1;
+    padding-right: 20px;
+    margin-top: -4px;
+}
+.header div span{
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    color: #ccc;
+}
+.header div input{
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    line-height: 30px;
+    text-indent: 30px;
+    background-color: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    outline: none;
+}
+/* 主体 */
+.main{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+.main .cate-left{
+    background-color: #f8f8f8;
+    width: 85px;
+}
+.main .cate-left li{
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    text-align: center;
+}
+.main .cate-left li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #000;
+}
+.active a{
+    background-color: #fff;
+    color: #E43130 !important;
+}
+
+.main .cate-right{
+    flex: 1;
+    overflow-y: scroll;
+}
+.main .cate-right .content-item{
+    display: flex;
+    flex-direction: column;
+}
+.main .cate-right .content-item h3{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 46px;
+    margin-left: 5px;
+}
+.main .cate-right .content-item ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+.main .cate-right .content-item ul li{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.main .cate-right .content-item ul li img{
+    width: 100%;
+}
+.main .cate-right .content-item ul li p{
+    font-size: 14px;
+    color: #000;
+}
+
+/* 尾部 */
+.footer ul{
+    height: 40px;
+    background-color: #fff;
+   display: flex;
+   justify-content: space-around;
+
+}
+.footer ul li{
+    text-align: center;
+}
+.footer ul li a{
+    color: #8b8b8b;
+}
+.footer ul li a span{
+    line-height: 20px;
+}
+.footer ul li a p{
+    font-size: 12px;
+    line-height: 20px;
+}
+/* 并列选择器 群组选择器 */
+.footer ul li a.active p,.footer ul li a.active span{
+    color: red;
+}

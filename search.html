@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 视口设置
+    meta:vp
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- reset.css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- iconfont.css -->
+    <link rel="stylesheet" href="./lib/iconfont/iconfont.css">
+    <!-- swiper.min.css -->
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+    <!-- search.css -->
+    <link rel="stylesheet" href="./css/search.css">
+    <title>乐购-app-首页</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <span class="iconfont icon-arrow-left" data-back="prev"></span>
+       <div>
+           <span class="iconfont icon-sousuo"></span>
+           <input type="search" id="keyword" placeholder="搜索您需要的商品">
+       </div>
+        <button type="button" id="search-btn">搜索</button>
+    </header>
+   <!-- 历史记录 history-content-->
+   <div class="history-content">
+        <div class="recent-search">
+            <span>最新搜索</span>
+            <i class="iconfont icon-shanchu" id="del"></i>
+        </div>
+        <ul class="content" id="content">
+
+        </ul>
+   </div>
+    <!-- jquery3.5.js -->
+    <script src="./lib/jquery/jquery3.5.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/search.js"></script>
+</body>
+
+</html>

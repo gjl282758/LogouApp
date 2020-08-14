@@ -1,0 +1,112 @@
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;;
+}
+
+/* 主体 */
+.main{
+    flex: 1;
+    overflow-y: scroll;
+    
+}
+.personal{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+}
+.personal img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+.personal div{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+/* 订单信息 */
+.order-info{
+    margin-top: 10px ;
+    display: flex;
+    justify-content: space-around;
+    height: 20vw;
+    background-color: #fff;
+    align-items: center;
+}
+.order-info li{
+    text-align: center;
+    font-size: 12px;
+}
+.order-info li a{
+    text-decoration: none;
+    color: rgb(22, 21, 21);
+}
+.order-info li a span.iconfont{
+    font-size: 36px;
+}
+/* 功能 */
+.function-list{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+}
+.function-list li{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #f7f7f7;
+    line-height: 16vw;
+}
+.function-list li:not(:last-child){
+    border-bottom: none;
+}
+.function-list li p{
+    flex: 1;
+}
+.function-list li p a{
+    color: rgb(22, 21, 21);
+}
+.function-list li p a span{
+    color: red;
+    font-size: 26px;
+    margin-right: 10px;
+}
+.function-list li .icon-youjiantou{
+    color: #ccc;
+    font-size: 24px;
+}
+
+/* 尾部 */
+.footer ul{
+    height: 40px;
+    background-color: #fff;
+   display: flex;
+   justify-content: space-around;
+
+}
+.footer ul li{
+    text-align: center;
+}
+.footer ul li a{
+    color: #8b8b8b;
+}
+.footer ul li a span{
+    line-height: 20px;
+}
+.footer ul li a p{
+    font-size: 12px;
+    line-height: 20px;
+}
+/* 并列选择器 群组选择器 */
+.footer ul li a.active p,.footer ul li a.active span{
+    color: red;
+}

@@ -1,0 +1,207 @@
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    
+}
+/* 头部 */
+.header{
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    line-height: 45px;
+    background-color: #fff;
+}
+.header span{
+    margin-left: 10px;
+}
+.header h3{
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+/* 主体 */
+.main{
+    flex: 1;
+    overflow-y: scroll;
+}
+.main .car-list{
+    display: flex;
+    flex-direction: column;
+}
+.main .car-list .car-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+}
+.main .car-list .car-item .checkbox{
+    align-self: center;
+}
+.main .car-list .car-item .checkbox label>input{
+    display: none;
+}
+.main .car-list .car-item .checkbox label>input:checked+span{
+    background-color: #E43130;;
+    border: 1px solid transparent;
+    color: #fff;
+}
+.main .car-list .car-item .checkbox label>span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    outline: none;
+    color: transparent;
+    font-size: 14px;
+    text-align: center;
+    line-height: 16px;
+}
+.main .car-list .car-item .content{
+    flex: 1;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    align-items: center;
+}
+.main .car-list .car-item .content .car-img{
+    width: 22vw;
+    height: 22vw;
+    margin: 0px 10px;
+}
+.main .car-list .car-item .content .car-img img{
+    width: 100%;
+}
+.main .car-list .car-item .content .car-desc{
+    flex: 1;
+}
+.main .car-list .car-item .content .car-desc .name{
+    line-height: 30px;
+}
+.main .car-list .car-item .content .car-desc .cfenlei{
+    color: #999BA1;
+    font-size: 12px;
+}
+.main .car-list .car-item .content .car-desc .price{
+    color: #E43130;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+.main .car-list .car-item .contorl{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+}
+.main .car-list .car-item .contorl div{
+    border: 1px solid #666;
+    width: 20px;
+    text-align: center;
+}
+.main .car-list .car-item .contorl input{
+    text-align: center;
+    width: 25px;
+    border: 1px solid #666;
+    margin: 0 -1px;
+    outline: none;
+}
+.xj{
+    display: none;
+}
+/* 底线 */
+.main .bottom-line{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.main .bottom-line .line{
+    border-bottom: 1px solid #ddd;
+    flex: 1;
+    align-items: center;
+    margin: 0 5px;
+    
+}
+.main .bottom-line .text{
+    font-size: 12px;
+    color: #333;
+    margin: 0 5px;
+}
+
+/* 购物车 */
+.shop-car{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+    line-height: 35px;
+}
+.shop-car .checkbox input{
+    display: none;
+}
+.shop-car .checkbox input:checked+span{
+    background-color: #E43130;
+    border: 1px solid transparent;
+    color: #fff;
+    border-radius: 50%;
+}
+.shop-car .checkbox label span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+    color: transparent;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.shop-car .total{
+    flex: 1;
+    text-align: center;
+    color: #666;
+}
+.shop-car .total span{
+    color: #E43130;
+}
+.shop-car a{
+    display: inline-block;
+    height: 100%;
+    line-height: 35px;
+    background-color:  #E43130;
+    color: #fff;
+    padding: 0 10px;
+}
+
+/* 尾部 */
+.footer ul{
+    height: 40px;
+    background-color: #fff;
+   display: flex;
+   justify-content: space-around;
+
+}
+.footer ul li{
+    text-align: center;
+}
+.footer ul li a{
+    color: #8b8b8b;
+}
+.footer ul li a span{
+    line-height: 20px;
+}
+.footer ul li a p{
+    font-size: 12px;
+    line-height: 20px;
+}
+/* 并列选择器 群组选择器 */
+.footer ul li a.active p,.footer ul li a.active span{
+    color: red;
+}
